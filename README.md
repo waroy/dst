@@ -1,13 +1,13 @@
 # Don't Starve Together
 
-[![](https://images.microbadger.com/badges/image/webhippie/dst.svg)](https://microbadger.com/images/webhippie/dst "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/chest/dst.svg)](https://microbadger.com/images/chest/dst "Get your own image badge on microbadger.com")
 
 These are docker images for [Don't Starve Together](https://www.kleientertainment.com/games/dont-starve-together) running on a [SteamCMD container](https://registry.hub.docker.com/u/webhippie/steamcmd/).
 
 
 ## Versions
 
-* [latest](https://github.com/dockhippie/dst/tree/master) available as ```webhippie/dst:latest``` at [Docker Hub](https://registry.hub.docker.com/u/webhippie/dst/)
+* [latest](https://github.com/DNAlchemist/dst/tree/master) available as ```chest/dst:latest``` at [Docker Hub](https://registry.hub.docker.com/u/chest/dst/)
 
 
 ## Volumes
@@ -33,6 +33,7 @@ ENV DST_SERVER_INTENTION cooperative
 ENV DST_SERVER_PASSWORD # Required
 ENV DST_GAME_MODE endless
 ENV DST_MAX_PLAYERS 10
+ENV DST_SHARD_ENABLE true
 ENV DST_TICK_RATE 30
 ENV DST_LAN_ONLY_CLUSTER true
 ENV DST_SERVER_SAVE_SLOT 1
@@ -42,6 +43,7 @@ ENV DST_PAUSE_WHEN_EMPTY true
 ENV MAX_SNAPSHOTS 6
 ENV DST_AUTOSAVER_ENABLED true
 ENV DST_VOTE_ENABLED true
+ENV DST_CONSOLE_ENABLED true
 ENV DST_OFFLINE_SERVER false
 ENV DST_SHARD_ID
 ENV DST_PRESET
